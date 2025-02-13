@@ -6,7 +6,7 @@ import ChatComponent from "./components/chat/ChatComponent";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import LoginContextProvider from "./contexts/LoginContextProvider";
 import SampleIndex from "./SampleIndex";
-import GitData from "./domains/ProjectPage/components/gitData";
+import GitData from "./domains/ProjectPage/components/GitData";
 import ProjectIssue from"./domains/ProjectPage/components/IssueTable";
 import ProjectMembers from "./domains/ProjectPage/components/ProjectMembers";
 import Resignations from "./domains/ProjectPage/components/Resignations";

@@ -6,7 +6,7 @@ ENV VITE_BASE_URL=${VITE_BASE_URL}
 
 WORKDIR /app
 COPY package*.json ./
-RUN npm i
+RUN npm ci
 COPY . .
 
 RUN npm run build
