@@ -9,7 +9,6 @@ COPY package*.json ./
 RUN npm ci
 COPY . .
 
-RUN npm install -g npm@11.1.0
 RUN npm run build
 
 FROM nginx:stable-alpine
