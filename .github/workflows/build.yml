@@ -37,7 +37,7 @@ jobs:
           key: ${{ secrets.EC2_KEY }}
           script: |
             docker login -u ${{ secrets.DOCKER_USERNAME }} -p ${{ secrets.DOCKER_PASSWORD }}
-            docker stop $(docker ps -aq) || true
-            docker rm $(docker ps -aq) || true
+            sudo docker stop $(docker ps -aq) || true
+            sudo docker rm $(docker ps -aq) || true
             docker pull wns0901/crew-dock-client:latest
             docker run -d -p 80:80 --name crew-dock-client wns0901/crew-dock-client:latest
