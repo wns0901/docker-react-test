@@ -1,7 +1,7 @@
 import React from "react";
 import { Box } from "@mui/material";
 import { Outlet, useLocation } from "react-router-dom";
-import ProjectInfo from "./ProjectInfo.jsx";
+import ProjectInfo from "./ProjectInfo";
 import SettingsSidebar from "./SettingsSideBar";
 
 const ProjectMain = () => {
